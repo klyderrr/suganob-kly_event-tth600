@@ -6,7 +6,7 @@
 <title>Venues — kly</title>
 <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="venues">
 <div class="shell">
 
   <nav class="nav">
@@ -20,7 +20,7 @@
       <li><a href="attendees.html"><span class="num">03</span> Attendees</a></li>
       <li><a href="registrations.html"><span class="num">04</span> Registrations</a></li>
     </ul>
-    <div class="nav-footer">kly &middot; static mockup</div>
+    <div class="nav-footer">kly &middot; admin</div>
   </nav>
 
   <div class="perf"></div>
@@ -35,54 +35,13 @@
     </div>
 
     <div class="toolbar">
-      <input type="text" class="search" placeholder="Search venues…" />
-      <button class="btn btn-primary">New venue</button>
+      <input type="text" id="search" class="search" placeholder="Search venues…" />
+      <button id="new-btn" class="btn btn-primary">New venue</button>
     </div>
 
-    <div class="venue-split">
-      <div class="venue-list">
-        <div class="venue-list-item active">
-          <h4>Harborlight Hall</h4>
-          <p>Quezon City &middot; 480 cap.</p>
-        </div>
-        <div class="venue-list-item">
-          <h4>The Underline</h4>
-          <p>Makati &middot; 220 cap.</p>
-        </div>
-        <div class="venue-list-item">
-          <h4>Maple Studio</h4>
-          <p>Pasig &middot; 60 cap.</p>
-        </div>
-      </div>
-
-      <div class="venue-detail">
-        <p class="venue-detail-eyebrow">Selected venue</p>
-        <h2>Harborlight Hall</h2>
-
-        <div class="venue-stats">
-          <div class="venue-stat">
-            <div class="label">City</div>
-            <div class="value">Quezon City</div>
-          </div>
-          <div class="venue-stat">
-            <div class="label">Capacity</div>
-            <div class="value">480</div>
-          </div>
-          <div class="venue-stat">
-            <div class="label">Contact</div>
-            <div class="value" style="font-size:15px;">bookings@harborlight.ph</div>
-          </div>
-        </div>
-
-        <div class="venue-detail-actions">
-          <button class="btn btn-primary">Edit venue</button>
-          <button class="btn btn-ghost">Delete venue</button>
-        </div>
-      </div>
-    </div>
-
-    <p class="sr-note">Static mockup — buttons are for layout only and don't do anything yet.</p>
+    <div id="list"></div>
   </main>
 </div>
+<script src="app.js"></script>
 </body>
 </html>

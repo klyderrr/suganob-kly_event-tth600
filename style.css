@@ -513,3 +513,16 @@ tbody tr:hover{background:#FBFAF7;}
   .venue-list{border-right:none;border-bottom:1px solid var(--line);}
   .venue-stats{grid-template-columns:1fr;}
 }
+/* ================= DYNAMIC ADDITIONS ================= */
+.empty{
+  text-align:center;
+  padding:48px 16px;
+  color:#8a8471;
+  font-family:'Fraunces',serif;
+  font-size:16px;
+  border:1px dashed var(--line);
+  background:var(--white);
+}
+.form-error{color:var(--red);font-size:13px;margin:0;}
+.venue-list-item[data-act]{cursor:pointer;}
+.venue-list-item[data-act]:hover{background:#FBFAF7;}

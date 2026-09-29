@@ -6,7 +6,7 @@
 <title>Registrations — kly</title>
 <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="registrations">
 <div class="shell">
 
   <nav class="nav">
@@ -20,7 +20,7 @@
       <li><a href="attendees.html"><span class="num">03</span> Attendees</a></li>
       <li><a href="registrations.html" class="active"><span class="num">04</span> Registrations</a></li>
     </ul>
-    <div class="nav-footer">kly &middot; static mockup</div>
+    <div class="nav-footer">kly &middot; admin</div>
   </nav>
 
   <div class="perf"></div>
@@ -35,76 +35,13 @@
     </div>
 
     <div class="toolbar">
-      <input type="text" class="search" placeholder="Search registrations…" />
-      <button class="btn btn-primary">New registration</button>
+      <input type="text" id="search" class="search" placeholder="Search registrations…" />
+      <button id="new-btn" class="btn btn-primary">New registration</button>
     </div>
 
-    <div class="timeline-group">
-      <div class="timeline-group-header">
-        <h3>Signal Conference</h3>
-        <span class="count">1 registration</span>
-      </div>
-      <div class="timeline-item">
-        <div><span class="who">Mara Villanueva</span><span class="ticket-type">VIP</span></div>
-        <div class="right">
-          <span>2026-09-02</span>
-          <span class="tag tag-confirmed">Confirmed</span>
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-group">
-      <div class="timeline-group-header">
-        <h3>Nightwave Sessions</h3>
-        <span class="count">1 registration</span>
-      </div>
-      <div class="timeline-item">
-        <div><span class="who">Ken Ibarra</span><span class="ticket-type">General</span></div>
-        <div class="right">
-          <span>2026-09-15</span>
-          <span class="tag tag-confirmed">Confirmed</span>
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-group">
-      <div class="timeline-group-header">
-        <h3>Founders Workshop</h3>
-        <span class="count">1 registration</span>
-      </div>
-      <div class="timeline-item">
-        <div><span class="who">Priya Santos</span><span class="ticket-type">Speaker</span></div>
-        <div class="right">
-          <span>2026-09-20</span>
-          <span class="tag tag-pending">Pending</span>
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-group">
-      <div class="timeline-group-header">
-        <h3>City Makers Meetup</h3>
-        <span class="count">1 registration</span>
-      </div>
-      <div class="timeline-item">
-        <div><span class="who">Diego Reyes</span><span class="ticket-type">General</span></div>
-        <div class="right">
-          <span>2026-09-28</span>
-          <span class="tag tag-cancelled">Cancelled</span>
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </div>
-    </div>
-
-    <p class="sr-note">Static mockup — buttons are for layout only and don't do anything yet.</p>
+    <div id="list"></div>
   </main>
 </div>
+<script src="app.js"></script>
 </body>
 </html>

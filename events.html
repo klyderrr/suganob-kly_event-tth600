@@ -6,7 +6,7 @@
 <title>Events — kly</title>
 <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="events">
 <div class="shell">
 
   <nav class="nav">
@@ -20,7 +20,7 @@
       <li><a href="attendees.html"><span class="num">03</span> Attendees</a></li>
       <li><a href="registrations.html"><span class="num">04</span> Registrations</a></li>
     </ul>
-    <div class="nav-footer">kly &middot; static mockup</div>
+    <div class="nav-footer">kly &middot; admin</div>
   </nav>
 
   <div class="perf"></div>
@@ -35,70 +35,13 @@
     </div>
 
     <div class="toolbar">
-      <input type="text" class="search" placeholder="Search events…" />
-      <button class="btn btn-primary">New event</button>
+      <input type="text" id="search" class="search" placeholder="Search events…" />
+      <button id="new-btn" class="btn btn-primary">New event</button>
     </div>
 
-    <div class="event-grid">
-      <article class="event-card">
-        <div class="event-card-top">
-          <span class="tag tag-open">Open</span>
-          <span class="event-card-category">Conference</span>
-        </div>
-        <h3 class="event-card-title">Signal Conference</h3>
-        <div class="event-card-meta"><span>Oct 14, 2026</span><span>&middot;</span><span>Harborlight Hall</span></div>
-        <div class="event-card-divider"></div>
-        <div class="event-card-actions">
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </article>
-
-      <article class="event-card">
-        <div class="event-card-top">
-          <span class="tag tag-full">Sold Out</span>
-          <span class="event-card-category">Concert</span>
-        </div>
-        <h3 class="event-card-title">Nightwave Sessions</h3>
-        <div class="event-card-meta"><span>Oct 22, 2026</span><span>&middot;</span><span>The Underline</span></div>
-        <div class="event-card-divider"></div>
-        <div class="event-card-actions">
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </article>
-
-      <article class="event-card">
-        <div class="event-card-top">
-          <span class="tag tag-draft">Draft</span>
-          <span class="event-card-category">Workshop</span>
-        </div>
-        <h3 class="event-card-title">Founders Workshop</h3>
-        <div class="event-card-meta"><span>Nov 2, 2026</span><span>&middot;</span><span>Maple Studio</span></div>
-        <div class="event-card-divider"></div>
-        <div class="event-card-actions">
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </article>
-
-      <article class="event-card">
-        <div class="event-card-top">
-          <span class="tag tag-open">Open</span>
-          <span class="event-card-category">Meetup</span>
-        </div>
-        <h3 class="event-card-title">City Makers Meetup</h3>
-        <div class="event-card-meta"><span>Nov 9, 2026</span><span>&middot;</span><span>The Underline</span></div>
-        <div class="event-card-divider"></div>
-        <div class="event-card-actions">
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </article>
-    </div>
-
-    <p class="sr-note">Static mockup — buttons are for layout only and don't do anything yet.</p>
+    <div class="event-grid" id="list"></div>
   </main>
 </div>
+<script src="app.js"></script>
 </body>
 </html>

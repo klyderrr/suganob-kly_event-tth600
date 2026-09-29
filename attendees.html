@@ -6,7 +6,7 @@
 <title>Attendees — kly</title>
 <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="attendees">
 <div class="shell">
 
   <nav class="nav">
@@ -20,7 +20,7 @@
       <li><a href="attendees.html" class="active"><span class="num">03</span> Attendees</a></li>
       <li><a href="registrations.html"><span class="num">04</span> Registrations</a></li>
     </ul>
-    <div class="nav-footer">kly &middot; static mockup</div>
+    <div class="nav-footer">kly &middot; admin</div>
   </nav>
 
   <div class="perf"></div>
@@ -35,72 +35,13 @@
     </div>
 
     <div class="toolbar">
-      <input type="text" class="search" placeholder="Search attendees…" />
-      <button class="btn btn-primary">New attendee</button>
+      <input type="text" id="search" class="search" placeholder="Search attendees…" />
+      <button id="new-btn" class="btn btn-primary">New attendee</button>
     </div>
 
-    <div class="directory-group">
-      <p class="directory-heading">D</p>
-      <div class="directory-row">
-        <div class="avatar-circle">DR</div>
-        <div class="directory-info">
-          <div class="name">Diego Reyes</div>
-          <div class="meta">diego@freelance.dev &middot; Freelance</div>
-        </div>
-        <div class="directory-actions">
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="directory-group">
-      <p class="directory-heading">K</p>
-      <div class="directory-row">
-        <div class="avatar-circle">KI</div>
-        <div class="directory-info">
-          <div class="name">Ken Ibarra</div>
-          <div class="meta">ken@studiobloc.com &middot; Studio Bloc</div>
-        </div>
-        <div class="directory-actions">
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="directory-group">
-      <p class="directory-heading">M</p>
-      <div class="directory-row">
-        <div class="avatar-circle">MV</div>
-        <div class="directory-info">
-          <div class="name">Mara Villanueva</div>
-          <div class="meta">mara.v@northfield.co &middot; Northfield Co.</div>
-        </div>
-        <div class="directory-actions">
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="directory-group">
-      <p class="directory-heading">P</p>
-      <div class="directory-row">
-        <div class="avatar-circle">PS</div>
-        <div class="directory-info">
-          <div class="name">Priya Santos</div>
-          <div class="meta">priya.santos@lumen.io &middot; Lumen</div>
-        </div>
-        <div class="directory-actions">
-          <button class="btn-edit-text">Edit</button>
-          <button class="btn-danger-text">Delete</button>
-        </div>
-      </div>
-    </div>
-
-    <p class="sr-note">Static mockup — buttons are for layout only and don't do anything yet.</p>
+    <div id="list"></div>
   </main>
 </div>
+<script src="app.js"></script>
 </body>
 </html>
